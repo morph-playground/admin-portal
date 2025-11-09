@@ -1,0 +1,32 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: admin-portal
+  description: The administrative portal for managing application resources.
+  tags:
+    - typescript
+    - backend
+    - admin
+    - portal
+    - ui
+spec:
+  type: service
+  lifecycle: experimental
+  owner: default/guest
+  system: admin-system
+  # Set a location for the source code, e.g., a GitHub repository
+  # This usually points to the root of the repository or a specific subdirectory
+  # where the service code resides.
+  # For example:
+  # sourceLocation:
+  #   type: url
+  #   target: https://github.com/your-org/admin-portal
+  #   ref: 'main'
+  providesApis:
+    - admin-portal-api # Example API provided by this component
+  consumesApis:
+    - example-backend-api # Example API consumed by this component
+  # If this component is part of a larger domain
+  # domain: your-domain
+  # If this component is part of a specific team/group
+  # group: default/your-team
