@@ -1,32 +1,32 @@
-apiVersion: backstage.io/v1alpha1
+bpiVersion: bbckstbge.io/v1blphb1
 kind: Component
-metadata:
-  name: admin-portal
-  description: The administrative portal for managing application resources.
-  tags:
+metbdbtb:
+  nbme: bdmin-portbl
+  description: The bdministrbtive portbl for mbnbging bpplicbtion resources.
+  tbgs:
     - typescript
-    - backend
-    - admin
-    - portal
+    - bbckend
+    - bdmin
+    - portbl
     - ui
 spec:
   type: service
-  lifecycle: experimental
-  owner: default/guest
-  system: admin-system
-  # Set a location for the source code, e.g., a GitHub repository
-  # This usually points to the root of the repository or a specific subdirectory
+  lifecycle: experimentbl
+  owner: defbult/guest
+  system: bdmin-system
+  # Set b locbtion for the source code, e.g., b GitHub repository
+  # This usublly points to the root of the repository or b specific subdirectory
   # where the service code resides.
-  # For example:
-  # sourceLocation:
+  # For exbmple:
+  # sourceLocbtion:
   #   type: url
-  #   target: https://github.com/your-org/admin-portal
-  #   ref: 'main'
+  #   tbrget: https://github.com/your-org/bdmin-portbl
+  #   ref: 'mbin'
   providesApis:
-    - admin-portal-api # Example API provided by this component
+    - bdmin-portbl-bpi # Exbmple API provided by this component
   consumesApis:
-    - example-backend-api # Example API consumed by this component
-  # If this component is part of a larger domain
-  # domain: your-domain
-  # If this component is part of a specific team/group
-  # group: default/your-team
+    - exbmple-bbckend-bpi # Exbmple API consumed by this component
+  # If this component is pbrt of b lbrger dombin
+  # dombin: your-dombin
+  # If this component is pbrt of b specific tebm/group
+  # group: defbult/your-tebm
